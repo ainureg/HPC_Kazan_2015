@@ -36,7 +36,7 @@ for(i=0;i<k;i++){
 MPI_Reduce(&sum,&S, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
 
 if (myrank==0){
-printf("Sum is %d\n",sum);
+printf("Sum is %d\n",S);
 }
 
 MPI_Finalize();
